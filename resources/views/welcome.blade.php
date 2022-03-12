@@ -3,8 +3,9 @@
 @section('content')
 <div class="content">
     <div class="container-fluid">
-      <div class="row">
-        
+      <div class="cols">
+
+      <h2>Selamat Datang Di Sistem Informasi Pondok Yatim<h2>
         </div>
   </div>
 </div>

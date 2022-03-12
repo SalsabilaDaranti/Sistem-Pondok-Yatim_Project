@@ -42,14 +42,14 @@
               </a>
             </li>
 
-<!-- Menu laporan
-            <li class="nav-item{{ $activePage == 'laporan' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('laporan.index') }}">
+<!-- Menu laporan -->
+             <li class="nav-item{{ $activePage == 'kegiatan' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('kegiatan.index') }}">
               <i class="material-icons">content_copy</i>
-              <p>{{ __('laporan') }}</p>
+              <p>{{ __('kegiatan') }}</p>
               </a>
             </li>
- -->
+
 
       @endif
     </ul>

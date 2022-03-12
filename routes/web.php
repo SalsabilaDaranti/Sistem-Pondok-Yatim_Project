@@ -7,6 +7,7 @@ use App\Http\Controllers\DonasiController;
 use App\Http\Controllers\AnakAsuhController;
 use App\Http\Controllers\KebutuhanController;
 use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\KegiatanController;
 
 
 /*
@@ -43,7 +44,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('anakasuh', AnakAsuhController::class);
 	Route::resource('kebutuhan', KebutuhanController::class);
 	Route::resource('laporan', LaporanController::class);
-
+	Route::resource('kegiatan', kegiatancontroller::class);
+	
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
